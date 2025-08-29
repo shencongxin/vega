@@ -26,7 +26,7 @@ CoreGui:SetCore("SendNotification", {
     Text = "欢迎"..game.Players.LocalPlayer.Name.."执行西瓜脚本",
     Duration = 5,
 })
-print("西瓜中心滴反挂机已经为你开好了 😋")
+print("西瓜中心滴反挂机已开好了 😋")
 		local vu = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
 		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -75,7 +75,7 @@ end
 Start = tick()
 Heartbeat:Connect(HeartbeatUpdate)
 local OrionLib = loadstring(game:HttpGet("https://pastebin.com/raw/FUEx0f3G"))()
-local Window = OrionLib:MakeWindow({IntroText = "感谢"..game.Players.LocalPlayer.Name.."加载GUI",Name = "西瓜脚本1.0.8", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥知道脚本啊"})
+local Window = OrionLib:MakeWindow({IntroText = "感谢"..game.Players.LocalPlayer.Name.."加载GUI",Name = "西瓜脚本", HidePremium = false, SaveConfig = true, ConfigFolder = "大哥这缝合脚本啊"})
 local about = Window:MakeTab({
     Name = "₪信息",
     Icon = "rbxassetid://7734053495",
@@ -229,5 +229,18 @@ Tab:AddButton({
 	Name = "玩家进入提示",
 	Callback = function()
       	loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+      	
   	end
+})
+
+Tab:AddButton({
+
+	Name = "西瓜飞行",
+
+	Callback = function()
+
+     loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fly-V3-48359"))()
+
+  	end    
+
 })
