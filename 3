@@ -80,3 +80,109 @@ about:Label("十分感谢")
 local UITab3 = win:Tab("『通用』",'7734068321')
 
 local about = UITab3:section("『通用』",true)
+
+about:Button("玩家加入游戏提示",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
+end)
+
+about:Button("获得管理员权限",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/sZpgTVas"))()
+end)
+
+about:Button("死亡笔记",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%AD%BB%E4%BA%A1%E7%AC%94%E8%AE%B0%20(1).txt"))()
+end)
+
+about:Button("汉化穿墙",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScript/main/Noclip"))()
+end)
+    
+about:Button("飞行",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/jm%E9%A3%9E..lua"))()
+end)
+
+about:Button("隐身（E）",function()
+loadstring(game:HttpGet('https://pastebin.com/raw/nwGEvkez'))()
+end)
+
+about:Button("电脑键盘",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+about:Button("飞车",function()
+loadstring(game:HttpGet("https://pastebin.com/raw/G3GnBCyC", true))()
+end)
+
+about:Button("踏空行走",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Float'))()
+end)
+
+about:Button("飞车2",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/vb/main/%E9%A3%9E%E8%BD%A6.lua"))()
+end)
+
+about:Button("旋转",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/%E6%97%8B%E8%BD%AC.lua"))()
+end)
+
+about:Button("紫莎",function()
+game.Players.LocalPlayer.Character.Humanoid.Health=0
+end)
+
+about:Button("飞檐走壁",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+end)
+
+about:Button("夜视仪",function()
+    _G.OnShop = trueloadstring(game:HttpGet('https://raw.githubusercontent.com/DeividComSono/Scripts/main/Scanner.lua'))()
+end)
+
+about:Button("正常范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jiNwDbCN"))()
+end)
+
+about:Button("中等范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/x13bwrFb"))()
+end)
+
+about:Button("高级范围",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/KKY9EpZU"))()
+end)
+
+about:Button("反挂机",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/9fFu43FF"))()
+end)
+
+about:Button("无限跳",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/V5PQy3y0", true))()
+end)
+
+local UITab4 = win:Tab("『力量传奇』",'7734068321')
+
+local about = UITab4:section("『力量传奇』",true)
+
+about:Toggle("自动比赛开关", "AR", false, function(AR)
+  while AR do wait() wait(2) game:GetService("ReplicatedStorage").rEvents.brawlEvent:FireServer("joinBrawl") end
+end)
+about:Toggle("自动举哑铃", "ATYL", false, function(ATYL)
+  local part = Instance.new('Part', workspace) part.Size = Vector3.new(500, 20, 530.1) part.Position = Vector3.new(0, 100000, 133.15) part.CanCollide = true part.Anchored = true local rs = game:GetService("RunService").RenderStepped while ATYL do wait() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 50, 0) for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.ClassName == "Tool" and v.Name == "Weight" then v.Parent = game.Players.LocalPlayer.Character end end game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep") end
+end)
+about:Toggle("自动俯卧撑", "ATFWC", false, function(ATFWC)
+  local part = Instance.new('Part', workspace) part.Size = Vector3.new(500, 20, 530.1) part.Position = Vector3.new(0, 100000, 133.15) part.CanCollide = true part.Anchored = true local rs = game:GetService("RunService").RenderStepped while ATFWC do wait() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 50, 0) for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.ClassName == "Tool" and v.Name == "Pushups" then v.Parent = game.Players.LocalPlayer.Character end end game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep") end
+end)
+about:Toggle("自动仰卧起坐", "ATYWQZ", false, function(ATYWQZ)
+  local part = Instance.new('Part', workspace) part.Size = Vector3.new(500, 20, 530.1) part.Position = Vector3.new(0, 100000, 133.15) part.CanCollide = true part.Anchored = true local rs = game:GetService("RunService").RenderStepped while ATYWQZ do wait() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 50, 0) for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.ClassName == "Tool" and v.Name == "Situps" then v.Parent = game.Players.LocalPlayer.Character end end end game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep")
+end)
+about:Toggle("自动倒立身体", "ATDL", false, function(ATDL)
+  local part = Instance.new('Part', workspace) part.Size = Vector3.new(500, 20, 530.1) part.Position = Vector3.new(0, 100000, 133.15) part.CanCollide = true part.Anchored = true local rs = game:GetService("RunService").RenderStepped while ATDL do wait() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 50, 0) for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.ClassName == "Tool" and v.Name == "Handstands" then v.Parent = game.Players.LocalPlayer.Character end end end game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep")
+end)
+about:Toggle("自动锻炼", "ATAAA", false, function(ATAAA)
+  local part = Instance.new('Part', workspace) part.Size = Vector3.new(500, 20, 530.1) part.Position = Vector3.new(0, 100000, 133.15) part.CanCollide = true part.Anchored = true while ATAAA do wait() game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = part.CFrame + Vector3.new(0, 50, 0) for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do if v.ClassName == "Tool" and v.Name == "Handstands" or v.Name == "Situps" or v.Name == "Pushups" or v.Name == "Weight" then v:FindFirstChildOfClass("NumberValue").Value = 0 repeat wait() until game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool") game.Players.LocalPlayer.Character:WaitForChild("Humanoid"):EquipTool(v) game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep") end end end
+end)
+
+about:Toggle("自动重生", "ATRE", false, function(ATRE)
+  while ATRE do wait() game:GetService("ReplicatedStorage").rEvents.rebirthRemote:InvokeServer("rebirthRequest") end
+end)
+about:Button("收集宝石", function()
+  jk = {} for _, v in pairs(game:GetService("ReplicatedStorage").chestRewards:GetDescendants()) do if v.Name ~= "Light Karma Chest" or v.Name ~= "Evil Karma Chest" then table.insert(jk, v.Name) end end for i = 1, #jk do wait(2) game:GetService("ReplicatedStorage").rEvents.checkChestRemote:InvokeServer(jk[i]) end
+end)
