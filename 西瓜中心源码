@@ -48,8 +48,8 @@ local UITab1 = win:Tab("『信息』",'7734068321')
 
 local about = UITab1:section("『作者信息』",false)
 
-about:Label("西瓜中心㍿")
-about:Label("进群发最新西瓜天堂")
+about:Label("西瓜中心")
+about:Label("进群发最新西瓜")
 about:Label("脚本持续更新中")
 about:Label("脚本疯狂优化中")
 
@@ -74,7 +74,6 @@ about:Label("♦")
 about:Label("       ")
 about:Label("感谢大家支持西瓜中心")
 about:Label("十分感谢")
-about:Label("感谢 不拿拿（哈哈哈我神金又回来了）提供源码")
 
 
 local UITab3 = win:Tab("『通用』",'7734068321')
@@ -98,8 +97,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TtmScripter/OtherScri
 end)
     
 about:Button("飞行",function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dingding123hhh/tt/main/jm%E9%A3%9E..lua"))()
-end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shencongxin/vega/refs/heads/main/%E9%A3%9E%E8%A1%8C.lua"))()
 
 about:Button("透视",function()  
     _G.FriendColor = Color3.fromRGB(0, 0, 255)
