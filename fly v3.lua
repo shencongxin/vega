@@ -151,7 +151,7 @@ Frame.Draggable = true
 -- 添加焦点丢失事件，当用户输入完数字后更新速度
 speed.FocusLost:Connect(function(enterPressed)
     local num = tonumber(speed.Text)
-    if num and num >= 0.1 and num <= 5090 then
+    if num and num >= 0.1 and num <= 6767 then
         speeds = num
         speed.Text = tostring(speeds)
         
